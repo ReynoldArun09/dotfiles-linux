@@ -1,0 +1,161 @@
+{
+  /*   Editor Settings    */
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.emptySelectionClipboard": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.detectIndentation": false,
+  "editor.minimap.enabled": false,
+  "editor.guides.indentation": false,
+  "editor.matchBrackets": "never",
+  "editor.colorDecorators": false,
+  "editor.lightbulb.enabled": "off",
+  "editor.selectionHighlight": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderLineHighlight": "none",
+  "editor.occurrencesHighlight": "off",
+  "editor.renderControlCharacters": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.lineNumbers": "relative",
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "always",
+    "source.organizeImports": "always"
+  },
+  /** Workbench & UI Settings */
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": "none",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  //   "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.sideBar.location": "right",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "symbols",
+  "workbench.navigationControl.enabled": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "window.commandCenter": false,
+  "breadcrumbs.enabled": false,
+
+  /** Explorer **/
+  "explorer.decorations.badges": true,
+  "explorer.compactFolders": false,
+
+  /** Git & SCM Settings */
+  "scm.diffDecorations": "none",
+  "git.decorations.enabled": true,
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
+  /** Terminal Settings */
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  /** file and formatting **/
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  /** Language-Specific Settings **/
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[graphql]": {
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  /** Vim Key Bindings **/
+
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "commands": ["extension.vim_escape", "workbench.action.files.save"]
+    }
+  ],
+  "vim.searchHighlightColor": "rgba(150, 255, 255, 0.3)",
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(250, 240, 170, 0.5)",
+  "vim.highlightedyank.duration": 1000,
+  "vim.handleKeys": {
+    "<C-a>": false
+  },
+  "vim.useCtrlKeys": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    }
+  ],
+
+  // Operator-pending mode: ensure motions don't reintroduce yank
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    }
+  ],
+
+  // Visual mode: delete selection without yanking
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["p"],
+      "after": ["\"", "_", "d", "P"]
+    }
+  ],
+
+  /**Extensions & Telemetry **/
+  "extensions.ignoreRecommendations": true,
+  "extensions.experimental.affinity": { "vscodevim.vim": 1 },
+  "redhat.telemetry.enabled": false,
+  "symbols.hidesExplorerArrows": true,
+  "custom-ui-style.font.sansSerif": "JetBrains Mono",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "zig.zls.enabled": "on",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "go.toolsManagement.autoUpdate": true,
+
+  /** Prettier Settings **/
+  "prettier.printWidth": 120,
+
+  /** Custom Css and Js */
+  "vscode_custom_css.imports": [
+    "file:///home/rey/Documents/Workspace/dotfiles/vscode-settings/custom.css",
+    "file:///home/rey/Documents/Workspace/dotfiles/vscode-settings/vscode-script.js"
+  ]
+}
+
